@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <script src="script.js"></script>
+  </head>
+  <body onload="showMenus()">
+    <div id="infoPizzeriaBg" class="infoPizzeriaBg d-none" onclick="closeInfoPizzeria()">
+    <div id="infoPizzeria" class="infoPizzeria d-none" onclick="doNotCloseInfoPizzeria(event)">
+      <div>
+        <h2>Über das Restaurant</h2>
+      </div>
+      <h3><img src="img/logoClock.png">Lieferzeiten </h3>
+      <table>
+        <tr>
+          <td>Montag</td>
+          <td>10:30 - 00:45</td>
+        </tr>
+        <tr>
+          <td>Dienstag</td>
+          <td>10:30 - 00:45</td>
+        </tr>
+        <tr>
+          <td>Mittwoch</td>
+          <td>10:30 - 00:45</td>
+        </tr>
+        <tr>
+          <td>Donnerstag</td>
+          <td>10:30 - 00:45</td>
+        </tr>
+        <tr>
+          <td>Freitag</td>
+          <td>17:00 - 03:45</td>
+        </tr>
+        <tr>
+          <td>Samstag</td>
+          <td>10:30 - 03:45</td>
+        </tr>
+        <tr>
+          <td>Sonntag</td>
+          <td>10:30 - 00:45</td>
+        </tr>
+      </table>
+    </div>
+    </div>
+
+    <header>
+      <img class="logo" src="img/logo.png" />
+      <span>Speisekarte</span>
+      <img class="flag" src="img/flag.jpg" />
+    </header>
+
+    <div class="mainPart">
+      <!--left - Anfang-->
+      <div class="left" id="left">
+        <img class="imagePizza" src="img/pizza.jpg" />
+        <img class="logoPizzeria" src="img/logoPizzeria.png" id="logoPizzeria"/>
+        <div class="description">
+          <div class="description_1">
+            <h1>Pizzeria l'originale</h1>
+            <img onclick="openInfoPizzeria()" src="img/logoInfo.png" />
+          </div>
+          <div class="description_2">
+            <img src="img/logoClock.png" />
+            <span>15-40 min</span>
+          </div>
+          <p class="description_3">
+            Unter einem Bestellwert von €10,00 werden Lieferkosten in Höhe von €2,00 verrechnet.
+          </p>
+          <div class="description_4">
+            <a href="#starter">Vorspeisen</a>
+            <a href="#pizzas">Pizzen</a>
+            <a href="#drinks">Getränke</a>
+          </div>
+        </div>
+        <div class="allMenus" id="allMenus"></div>
+      </div>
+      <!--left - Ende-->
+
+      <div class="right" id="right">
+
+        <div class="heading"><h2>Warenkorb</h2><img src="img/cross.svg" class="d-none" id="crossBag" onclick="closeBigBag()"></div>
+        <div class="bag" id="bag">
+          <img src="img/bag.svg" />
+          <h2>Fülle deinen Warenkorb</h2>
+          <p>
+            Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle
+            dien Essen.
+          </p>
+        </div>
+        <div id="costs" class="costs"></div>
+      </div>
+    </div>
+    <!--mainPart - Ende-->
+
+    <div class="bigButton" id="bigButton">
+      <button onclick="openBigBag()" id="button"><img src="img/bag.svg"></button>
+    </div>
+
+    <footer id="footer">
+      <div class="footer_1">
+        <a href="#">ein Restaurant empfehlen</a>
+        <a href="#">ein Restaurant anmelden</a>
+        <a href="#">AGB</a>
+        <a href="#">Datenschutzerklärung</a>
+        <a href="#">Impressum</a>
+        <a href="#">Verwendung von Cookies</a>
+      </div>
+      <span> &#169; 2022 Lieferansno.at </span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,574 @@
+html {
+  scroll-behavior: smooth;
+ 
+}
+body {
+  margin: 0;
+  font-family: 'Quicksand';
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  padding: 12px 16px 12px 16px;
+  background-color:rgb(255, 255, 255);
+  box-shadow: -2px 0px 6px 0px rgb(0, 0, 0, 0.2);
+}
+.logo {
+  height:40px;
+}
+header span {
+  font-size: 16px;
+ font-weight: bold;
+ color: rgb(46, 46, 46);
+}
+.flag {
+  height: 22px;
+  width: 22px;
+  border-radius: 100%;
+  padding: 13px;
+  margin-left: 94.48px;
+  transition: background-color 125ms ease-in-out;
+}
+.flag:hover {
+  cursor: pointer;
+  background-color: rgb(243, 243, 243);
+}
+.mainPart {
+  display: flex;
+}
+.left {
+  width:calc(100% - 312px);
+}
+.imagePizza {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+.logoPizzeria {
+  position: absolute;
+  left: 40px;
+  top: 240px;
+  height: 100px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 14% 20px 14%;
+  margin-top: -6px;
+  box-shadow: -2px 0px 6px 0px rgb(0, 0, 0, 0.2);
+}
+.description_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+.description_1 h1 {
+  font-size: 25px;
+  color: rgb(46, 46, 46);
+}
+.description_1 img {
+  height: 20px;
+  border-radius: 100%;
+  padding: 13px;
+  background-color: rgb(243, 243, 243);
+  transition: background-color 125ms ease-in-out;
+}
+.description_1 img:hover {
+  cursor: pointer;
+  background-color: rgb(236, 236, 236);
+}
+.description_2 {
+  display: flex;
+  align-items: center;
+}
+.description_2 img {
+  height: 14px;
+  margin-right: 5px;
+}
+.description_2 span {
+  font-size: 13px;
+  color: rgb(73,85,86);
+}
+.description_3 {
+  font-size: 13px;
+  color: rgb(73,85,86);
+}
+.description_4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.description_4 a {
+  border-radius: 13.5px;
+  padding: 7px 12px 7px 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(73,85,86);
+  transition: background-color 125ms ease-in-out;
+  
+}
+.description_4 a:hover {
+  background-color:rgb(243, 243, 243);
+}
+.allMenus {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 14% 20px 14%;
+}
+.allMenus h2 {
+  color: rgb(46, 46, 46);
+}
+.singleMenu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 84px;
+  border-radius: 10px;
+  border: 1px solid rgb(206, 206, 206);
+  padding: 16px 16px 16px 16px;
+  margin-bottom: 20px;
+  
+}
+.imageMenus {
+  object-fit: cover;
+  height: 152px;
+  border-radius: 10px;
+}
+.singleMenu_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.singleMenu_1_1 {
+  display: flex;
+  align-items: center;
+}
+.singleMenu_1_1 h3{
+  margin: 0;
+  font-size: 18px;
+  color: rgb(46, 46, 46);
+}
+.imageInfo {
+  height: 20px;
+  margin-left: 10px;
+  transition: filter 125ms ease-in-out;
+}
+.imageInfo:hover {
+  cursor: pointer;
+  filter: invert(0.2);
+}
+.imageCross {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  padding: 5px;
+  background-color: rgb(243, 243, 243);
+  transition: background-color 125ms ease-in-out;
+}
+.imageCross:hover {
+  cursor: pointer;
+  background-color: rgb(236, 236, 236);
+}
+.singleMenu_2 {
+  font-size: 13px;
+  color: rgb(73,85,86);
+}
+.singleMenu_3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(46, 46, 46);
+}
+.right {
+  position: sticky;
+  top:0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 344px;
+  min-height: 100vH;
+  height: 100%;
+  box-shadow: -2px 0px 6px 0px rgb(0, 0, 0, 0.2);
+}
+.right h2 {
+  font-size: 22px;
+  color:  rgb(46, 46, 46);
+}
+.bag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px 16px 80px 16px;
+}
+.bag img {
+  object-fit: cover;
+  height: 35px;
+  filter: invert(0.2);
+}
+.bag p {
+  text-align: center;
+  font-size: 14px;
+  color:rgb(73,85,86);
+}
+.bagMenus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 0 20px 0;
+}
+.bagMenu {
+  display: flex;
+  flex-direction: column;
+  width: 312px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-size: 15px;
+}
+.bagMenu img:hover {
+  cursor: pointer;
+  background-color: rgb(236, 236, 236);
+}
+.bagMenu_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bagMenu_2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.bagMenu_2 img{
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 15px;
+  background-color: rgb(243, 243, 243);
+  transition: background-color 125ms ease-in-out;
+}
+hr {
+  width: 310px;
+  border-top: 1px solid #cacaca;
+  border-bottom: 0;
+}
+.tableCosts table {
+  width: 312px;
+}
+.tableCosts tr td:nth-child(2) {
+  text-align: right;
+}
+.tableCosts table tr:last-child {
+  font-weight: 600;
+}
+.buttonPay {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  padding: 9px 24px 9px 24px;
+  margin-bottom:10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #f36805;
+  transition: background-color 125ms ease-in-out;
+}
+.buttonPay:hover {
+  cursor: pointer;
+  background-color: #eb6200;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 125px;
+  font-size: 14px;
+  background-color: rgb(239,237,234);
+}
+.footer_1 {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+}
+.footer_1 a {
+  color: black;
+  text-decoration: none;
+}
+.footer_1 a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.infoPizzeriaBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 999;
+}
+.infoPizzeria {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 400px;
+  width: 500px;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: white;
+}
+.infoPizzeria h2 {
+  margin-bottom: 80px;
+}
+.infoPizzeria h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.infoPizzeria img {
+  height: 20px;
+  margin-right: 10px;
+}
+.infoPizzeria table {
+  width: 100%;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 14px;
+  background-color:rgb(245,243,241);
+}
+.infoPizzeria table tr td:nth-child(2) {
+  text-align: right;
+}
+.infoMenuBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 999;
+}
+.infoMenu {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 400px;
+  width: 500px;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: white;
+}
+.infoMenu li {
+  margin-bottom: 10px;
+}
+.d-none {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .right {
+    display: none !important;
+  }
+  .left {
+    width: 100% !important;
+  }
+  footer {
+    justify-content: space-between;
+    align-items:flex-start;
+    height: 390px;
+    padding: 20px 20px 111px 20px;
+  }
+  .footer_1 {
+    justify-content: space-between;
+    height: 325px;
+    flex-direction: column;
+    width: 200px;
+  }
+  .bigButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+    border-top:1px solid rgb(206, 206, 206);
+    background-color: white;
+  }
+  .bigButton img {
+    height: 20px;
+    margin-right: 10px;
+    filter: invert(1);
+  }
+  .bigButton button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 95%;
+    border-radius: 25px;
+    border: none;
+    padding: 9px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #f36805;
+    transition: background-color 125ms ease-in-out;
+  }
+  .bigButton button:hover {
+    cursor: pointer;
+    background-color: #eb6200;
+  }
+  .rightBig {
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    z-index: 999;
+  }
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+  .heading img {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 100%;
+    background-color: rgb(243, 243, 243);
+    transition: background-color 125ms ease-in-out;
+    transform: rotate(45deg);
+  }
+  .heading img:hover {
+    cursor: pointer;
+    background-color: rgb(236, 236, 236);
+  }
+  .bagMenus {
+    align-items: center;
+    justify-content: flex-start;
+    
+  }
+  .bagMenu {
+    width: 90%;
+  }
+  hr {
+    width: 95%;
+  }
+  .costs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:sticky;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-top: 1px solid rgb(206, 206, 206);
+  }
+  .tableCosts {
+    width: 90%;
+  }
+  .buttonPay {
+    width: 95%;
+    font-size: 20px;
+}
+}
+@media (max-width: 600px) {
+  .description {
+    padding: 40px 5% 20px 5%;
+  }
+  .allMenus {
+    padding: 40px 5% 20px 5%;
+  }
+  .infoPizzeria {
+    width: 250px;
+  }
+  .infoMenu {
+    width: 250px;
+  }
+}
+  @media (max-width: 500px) {
+  .singleMenu_1_1 h3{
+    font-size: 16px;
+  }
+  .singleMenu_3 {
+    font-size: 16px;
+  }
+  .imageInfo {
+    margin-right: 10px;
+  }
+  header {
+    padding: 12px 5px 12px 5px;
+  }
+  .logo {
+    height: 30px;
+  }
+  .flag {
+    margin-left: 59.14px;
+  }
+}
+@media (max-width: 340px) {
+  .singleMenu_1_1 h3{
+    font-size: 14px;
+  }
+  .singleMenu_3 {
+    font-size: 14px;
+  }
+  header span {
+    font-size: 14px;
+  }
+  .logo {
+    height: 25px;
+  }
+  .flag {
+    margin-left: 0px;
+  }
+  .infoPizzeria {
+    width: 200px;
+  }
+  .infoPizzeria h2 {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+  .infoPizzeria table {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .infoMenu {
+    width: 200px;
+  }
+  .infoMenu ul {
+    padding: 10px;
+  }
+}
